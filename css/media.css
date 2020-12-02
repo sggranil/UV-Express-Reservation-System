@@ -1,0 +1,193 @@
+
+  /* Media Queries */
+
+  	/* Device */ 
+
+  	@media screen and (min-width: 1280px)
+  		{
+  		
+  		}
+
+  		/* Tablet and Ipad */ 
+
+  			/* Portrait */
+
+				@media screen and (min-width: 1025px) and (max-width: 1280px) 
+					{
+						
+					}
+
+			/* Landscape */
+
+				@media screen and (min-width: 768px) and (max-width: 1024px)
+					{
+						
+					}
+
+		/* Android Phones */
+
+			/* Portrait */
+
+				@media screen and (min-width: 481px) and (max-width: 767px)
+					{
+						header
+					      	{
+						        margin: -8px;
+						        padding: 4vw;
+						        box-shadow: 0px 0px 5px 0px #808080;
+						        max-width: 100%
+					      	}
+
+					   	.logo
+					      	{
+					        	width: 250px;
+					      	}
+
+					   	.content
+					   		{
+					   			float: none;
+					   		} 
+
+					   	.main
+					   		{
+					   			width: 320px;
+					   		}
+
+						#destination
+						    {
+						   		top: 0px;
+						    	left: 0px;
+					      	}
+
+						.navico1::after
+						    {
+						        position: relative;
+						        left: 245px;
+						        bottom: 33px;
+						    }
+
+						.navico2::after
+						    {
+						        position: relative;
+						        left: 245px;
+						        bottom: 32px;
+					      	}
+
+						.form-date
+        					{
+						        position: relative;
+						        top: 0px;
+        					}
+
+        				#form-date-pic
+        					{
+        						width: 257px;
+        						text-align: center;
+        					}
+
+        				.form-pas
+        					{
+							    position: relative;
+							    top: 15px;
+							    left: 80px;
+       						}
+
+       					.search-btn
+						    {
+						        position: relative;
+						        top: 70px;
+						        left: -70px;
+						    }
+
+						.remind
+							{
+							    position: relative;
+							    top: 100px;
+							}
+					}
+
+				@media screen and (min-width: 0px) and (max-width: 480px)
+					{
+						header
+					      	{
+					        	margin: -8px;
+					        	padding: 15px;
+					        	box-shadow: 0px 0px 5px 0px #808080;
+					        	max-width: 100%
+					      	}
+
+					    .logo
+					      	{
+					        	width: 150px;
+					      	}
+
+					    .main
+					   		{
+					   			width: 320px;
+					   		}
+
+					   	.desi
+						    {
+						        left: 0px;
+						    }
+
+						#destination
+						    {
+						        left: 0px;
+						    }
+
+						.navico1::after
+						    {
+						        position: relative;
+						        left: 245px;
+						        bottom: 32px;
+						    }
+
+						.navico2::after
+						    {
+						        position: relative;
+						        left: 245px;
+						        bottom: 32px;
+						    }
+
+						.form-date
+        					{
+						        position: relative;
+						       	top: 0px;
+        					}
+
+        				#form-date-pic
+        					{
+        						width: 257px;
+        						text-align: center;
+        					}
+
+        				.form-pas
+        					{
+							    position: relative;
+							   	top: 15px;
+							    left: 80px;
+       						}
+
+       					.search-btn
+						    {
+						        position: relative;
+						        top: 70px;
+						        left: -70px;
+						    }
+						    
+						.remind
+							{
+							    position: relative;
+							    top: 100px;
+							}
+					}
+
+			/* Landscape */
+
+				@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape)
+
+					{
+						
+					}
+

@@ -1,0 +1,60 @@
+
+	.admin
+		{
+			width: 200px;
+			height: 490px;
+        	margin: 0 auto;
+        	padding: 50px;
+		}
+
+		.logo
+			{
+				position: relative;
+				top: 100px;
+				max-width: 200px;
+			}
+
+	.login-php
+		{
+			position: relative;
+			top: 135px;
+			text-align: center;
+		}
+
+	form input
+		{
+			display: inline-block;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 15px;
+			font-family: 'Cabin';
+		}
+
+	input[type=text], input[type=password]
+		{
+			width: 190px;
+			padding: 5px;
+			border: 1px solid #d9d9d9;
+			border-radius: 5px;
+			font-size: 15px;
+
+		}
+
+	#loginbtn
+		{
+			padding: 10px 20px;
+			font-size: 15px;
+			border: none;
+			border-radius: 5px;
+			background-color: #000080;
+			color: white;
+			cursor: pointer;
+		}
+
+	#loginbtn:hover
+		{
+			background-color: #ffd700;
+			color: #000080;
+		}
+
+

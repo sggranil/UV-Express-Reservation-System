@@ -1,0 +1,21 @@
+trip
+
+trip_code primary
+trip_date
+trip_time
+trip_pax
+van_origin 
+van_des
+
+van
+
+trip_code foreign
+van_platenum
+van_origin
+van_des
+
+passenger
+
+tripcode
+pas_name
+pas_celnum

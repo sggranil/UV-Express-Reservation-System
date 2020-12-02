@@ -1,0 +1,187 @@
+<?php
+	session_start();
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UV Express Service</title>
+	<meta lang="en" />
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+	<meta name="HandheldFriendly" content="true" />
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<link rel="stylesheet" type="text/css" href="css/media.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet" />
+	<link rel="icon" href="assets/ico/ico_uv.png" type="image/gif" sizes="HeightxWidth|any" />
+	<script src="https://kit.fontawesome.com/831aa9393c.js" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
+
+</head>
+
+
+
+<body>
+
+<!-- Header -->
+
+	<header>
+			<img class="logo" src="assets/logo/logo_uv.png" alt="Non-Stop Zambales Experience!">
+	</header>
+
+
+<!-- Body -->
+
+<div class="main">
+	
+	<h1 style="font-family: 'Kaushan Script', cursive; font-size: 70px; text-align: center; line-height: 70px; color: #ffd700; text-shadow: 2px 2px #000080;">Explore Zambales!</h1>
+		<center class="center">
+			<p class="desu">A New Way of Web Navigating</p>
+			<p class="mobu"><i class="fas fa-desktop"></i> Hover the images below<br><i class="fas fa-mobile-alt"></i> Tap the images below</p>
+		</center>
+			
+			<hr color="#ffd700">
+
+	<!-- Navigation Banners -->
+
+		<div class="banner">	
+			<div class="content">	
+				<div class="pinatubo">
+					<img src="assets/banner/pin_320.jpg" alt="Photo by JC Gellidon">
+						<div class="pinatubo-hov">
+	    					<div class="headline-pin">Hike<br>Mount Pinatubo</div>
+	    						<a class="btn-book-pin" href="#resform">Book Now</a>
+	  					</div>
+				</div>
+			</div>
+				
+			<div class="content">	
+				<div class="magsaysay">
+					<img src="assets/banner/mag_320.jpg" alt="Photo by Magsaysay Ancestoral House">
+						<div class="magsaysay-hov">
+	    					<div class="headline-mag">Learn<br>Magsaysay's<br>History</div>
+	    						<a class="btn-book-mag" href="" target="_blank">Route Map</a>
+	  					</div>
+				</div>
+			</div>
+
+			<div class="content">	
+				<div class="poon">
+					<img src="assets/banner/poo_320.jpg" alt="Photo by Office of the Shrine of Ina Poon Bato">
+						<div class="poon-hov">
+	    					<div class="headline-poo">Discover<br>Little<br>Manaoag</div>
+	    						<a class="btn-book-poo" href="" target="_blank">Fare and Schedule</a>
+	  					</div>
+				</div>
+			</div>
+
+			<div class="content">	
+				<div class="mango">
+					<img src="assets/banner/man_320.jpg" alt="Photo from Byahe ni Drew on GMA">
+						<div class="mango-hov">
+	    					<div class="headline-man">Taste our<br>Delicious<br>Mangoes</div>
+	    						<a class="btn-book-man" href="" target="_blank">Contact Us</a>
+	  					</div>
+				</div>
+			</div>		
+		</div>
+	<hr color="#000080"><br><br>
+
+	<!-- Form -->
+
+	<div id="resform">
+		<form action="php/mainpage-query.php" method="get">
+			<div class="form-ori">
+				<div class="navico1">
+					<select id="origin" name="origin" onchange="pickOr()" required />
+						<option value="" disabled selected>Choose your Origin</option>
+						<option value="Olongapo">Olongapo</option>
+						<option value="Sta. Cruz">Sta. Cruz</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="form-desi">	
+				<div class="navico2">
+					<select id="destination" name="destination" onchange="pickDes()" disabled="true" required />
+						<option value="" disabled selected>Choose your Destination</option>
+						<option value="Olongapo">Olongapo</option>
+						<option value="Iba">Iba</option>
+						<option value="Sta. Cruz">Sta. Cruz</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="form-row">
+				<div class="form-date">
+					<input type="text" name="reservedate" id="form-date-pic" placeholder="Departure Date" min="2020-01-01" max="2020-12-31" onfocus="(this.type='date')" onblur="(this.type='text')" required />
+				</div>
+			</div>
+
+			<div class="form-row">
+				<div class="form-pas">
+					<label for="passenger" style="font-size: 20px;">Passenger: </label>
+						<input type="number" name="reservepax" id="pax" value="1" min="1" max="6" required />
+				</div>
+			</div>
+
+			<div class="form-row">
+				<div class="search-btn">
+					<input type="submit" id="search-book" value="Search">
+				</div>
+			</div>
+		</form>
+
+			<div class="form-row">
+				<div class="remind">
+					<h3>Reminders:</h3>
+						<p>1. Availability of trips are limited.</p>
+						<p>2. Double check the form before submitting. Copy the trip code and unique password before proceeding to the terminal prior to your trip schedule.</p>
+						<p>3. Do not forget to bring any valid ID's before trip schedule.</p>
+						<p>4. We do not accept any mode of online cash transaction, proceed to our reservation booth.</p>
+						<p>5. Failure to arrive to the terminal 15 minutes prior to your reserved slot will be awarded to other chance passenger.</p>
+				</div>
+			</div>
+	</div>
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+</div>
+
+<!-- Footer -->
+
+<div class="footer">
+
+</div>
+
+</body>
+</html>

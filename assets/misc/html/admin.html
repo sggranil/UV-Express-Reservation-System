@@ -1,0 +1,69 @@
+<?php
+
+	$con = mysqli_connect("localhost", "root", "", "uv_express");
+	mysqli_select_db($con, "uv_express");
+
+	if (isset($_POST['submit'])) 
+		{
+			$user = $_POST['email'];
+			$pass = $_POST['password'];
+
+			if ($result = mysqli_query($con, "SELECT * FROM admin_info")) 
+				{
+					while ($qr = mysqli_fetch_object($result))
+					{
+						$ua = $qr->email;
+						$up = $qr->password;
+
+						if ($ua == $user && $up == $pass)
+							{
+								header('location:main.html');
+							} else {
+								echo "Wrong account information!";
+							}
+					}
+				}
+		}
+
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin</title>
+	<meta lang="en" />
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+	<meta name="HandheldFriendly" content="true" />
+	<link rel="stylesheet" type="text/css" href="css/admin.css" />
+	<link rel="stylesheet" type="text/css" href="css/media-admin.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet" />
+	<link rel="icon" href="assets/ico/ico_uv.png" type="image/gif" sizes="HeightxWidth|any" />
+	<script src="https://kit.fontawesome.com/831aa9393c.js" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
+
+</head>
+
+<body>
+	
+
+<div class="admin">
+	<img class="logo" src="assets/logo/logo_uv.png" alt="Non-Stop Zambales Experience!">
+
+	<div class="login-php">
+		<form method="post">
+			<input type="email" id="user" name="email" placeholder="Email" autocomplete="off" required />
+			<input type="password" id="pass" name="password" placeholder="Password" required />
+			<input type="submit" id="loginbtn" value="Login" />
+		</form>
+	</div>
+</div>
+
+
+
+
+</body>

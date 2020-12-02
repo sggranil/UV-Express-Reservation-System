@@ -1,0 +1,524 @@
+/* Unused Fonts */
+
+  /* font-family: 'Manrope', sans-serif;
+     font-family: 'Bebas Neue', normal;
+
+
+  /* Header */
+
+    header
+      {
+        margin: -8px;
+        padding: 1vw;
+        box-shadow: 0px 0px 5px 0px #808080;
+      }
+
+    .logo
+      {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 250px;
+      }
+
+  /* Body */
+
+    .main
+      {
+        max-width: 660px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+    .center
+      {
+        color: #000080;
+      }
+
+      i
+        {
+          width: 20px;
+        }
+
+      .desu, .mobu
+        {
+          text-align: center;
+          line-height: 25px; 
+          font-family: 'Cabin';
+        }
+
+    /* Banner */
+
+      .banner
+        {
+          margin: 8px -16px;
+        }
+
+       .banner, .banner > .content
+        {
+          padding: 8px;
+        } 
+      
+      .content
+        {
+          float: left;
+          width: 320px;
+          overflow: hidden;
+        }
+
+      .banner:after
+        {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+    /* Pinatubo Banner */
+
+      .pinatubo
+          {
+              width: 320px;
+              transition: 0.5s ease;
+              filter: grayscale(100%) blur(1px);
+          }
+
+      .pinatubo-hov
+          {
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              overflow: hidden;
+              width: 0; 
+              height: 320px;
+              transition: 0.5s ease;
+              background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+          }
+
+        .pinatubo:hover .pinatubo-hov 
+          {
+              width: 320px;
+          }
+
+        .pinatubo:hover 
+          {
+              transform: scale(1.05) ;
+              filter: grayscale(0) blur(0);
+          }
+
+
+        .headline-pin
+          {
+              color: white;
+              font-family: 'Bebas Neue', normal;
+              font-size: 50px;
+              line-height: 50px;
+              position: absolute;
+              top: 25%;
+              left: 8%;
+              transform: translate(0%, 0%);
+              white-space: nowrap;
+          }
+
+        .btn-book-pin
+          {
+            position: absolute;
+            top: 75%;
+            left: 50%;
+            text-decoration-line: none;
+            padding: 10px 35px;
+            font-size: 15px;
+            border-radius: 10px;
+            border: none;
+            background: #000080;
+            color: white;
+            font-family: 'Cabin';
+            cursor: pointer;
+            transform: translate(0%, -50%);
+            white-space: nowrap;
+          }
+
+        .btn-book-pin:hover
+          {
+            background-color: #FFD700;
+            color: #000080;
+          }
+
+    /* Magsaysay Banner */
+
+      .magsaysay
+          {
+              width: 320px;
+              transition: 0.5s ease;
+              filter: grayscale(100%) blur(1px);
+          }
+
+        .magsaysay-hov
+          {
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              overflow: hidden;
+              width: 0; 
+              height: 320px;
+              transition: 0.5s ease;
+              background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+          }
+
+        .magsaysay:hover .magsaysay-hov 
+          {
+              width: 320px;
+          }
+
+        .magsaysay:hover 
+          {
+              transform: scale(1.05) ;
+              filter: grayscale(0) blur(0);
+          }
+
+        .headline-mag
+          {
+              color: white;
+              font-family: 'Bebas Neue', normal;
+              font-size: 50px;
+              line-height: 50px;
+              position: absolute;
+              top: 15%;
+              left: 8%;
+              transform: translate(0%, 0%);
+              white-space: nowrap;
+          }
+
+        .btn-book-mag
+          {
+            position: absolute;
+            top: 75%;
+            left: 50%;
+            text-decoration-line: none;
+            padding: 10px 35px;
+            font-size: 15px;
+            border-radius: 10px;
+            border: none;
+            background: #000080;
+            color: white;
+            font-family: 'Cabin';
+            cursor: pointer;
+            transform: translate(0%, -50%);
+            white-space: nowrap;
+          }
+
+        .btn-book-mag:hover
+          {
+            background-color: #FFD700;
+            color: #000080;
+          }
+
+    /* Poonbato Banner */
+
+      .poon
+        {
+            width: 30px;
+            transition: 0.5s ease;
+            filter: grayscale(100%) blur(1px);
+        }
+
+        .poon-hov
+          {
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              overflow: hidden;
+              width: 0; 
+              height: 320px;
+              transition: 0.5s ease;
+              background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+          }
+
+        .poon:hover .poon-hov 
+          {
+              width: 320px;
+          }
+
+        .poon:hover 
+          {
+              transform: scale(1.05) ;
+              filter: grayscale(0) blur(0);
+          }
+
+        .headline-poo
+          {
+              color: white;
+              font-family: 'Bebas Neue', normal;
+              font-size: 50px;
+              line-height: 50px;
+              position: absolute;
+              top: 15%;
+              left: 8%;
+              transform: translate(0%, 0%);
+              white-space: nowrap;
+          }
+
+        .btn-book-poo
+          {
+            position: absolute;
+            top: 75%;
+            left: 30%;
+            text-decoration-line: none;
+            padding: 10px 35px;
+            font-size: 15px;
+            border-radius: 10px;
+            border: none;
+            background: #000080;
+            color: white;
+            font-family: 'Cabin';
+            cursor: pointer;
+            transform: translate(0%, -50%);
+            white-space: nowrap;
+          }
+
+        .btn-book-poo:hover
+          {
+            background-color: #FFD700;
+            color: #000080;
+          }
+
+
+    /* Mango Banner */
+
+      .mango
+          {
+              width: 320px;
+              transition: 0.5s ease;
+              filter: grayscale(100%) blur(1px);
+          }
+
+        .mango-hov
+          {
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              overflow: hidden;
+              width: 0; 
+              height: 320px;
+              transition: 0.5s ease;
+              background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+          }
+
+        .mango:hover .mango-hov 
+          {
+              width: 320px;
+          }
+
+        .mango:hover 
+          {
+              transform: scale(1.05) ;
+              filter: grayscale(0) blur(0);
+          }
+
+        .headline-man
+          {
+              color: white;
+              font-family: 'Bebas Neue', normal;
+              font-size: 50px;
+              line-height: 50px;
+              position: absolute;
+              top: 15%;
+              left: 8%;
+              transform: translate(0%, 0%);
+              white-space: nowrap;
+          }
+
+        .btn-book-man
+          {
+            position: absolute;
+            top: 75%;
+            left: 50%;
+            text-decoration-line: none;
+            padding: 10px 35px;
+            font-size: 15px;
+            border-radius: 10px;
+            border: none;
+            background: #000080;
+            color: white;
+            font-family: 'Cabin';
+            cursor: pointer;
+            transform: translate(0%, -50%);
+            white-space: nowrap;
+          }
+
+        .btn-book-man:hover
+          {
+            background-color: #FFD700;
+            color: #000080;
+          }
+
+
+    /* Form */
+
+    .resform
+      {
+        border-radius: 5px;
+        padding: 20px;
+        font-family: 'Cabin';
+      }
+
+    .form-row, .form-ori, .form-desi
+      {
+        display: inline-block;
+      }
+
+    #destination
+      {
+        position: relative;
+        left: 39px;
+      }  
+
+    /* Select Icon Modified */
+
+    select
+      {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+      }
+
+    .navico1, .navico2
+      {
+        display: inline-block;
+        position: relative;
+      }
+
+    .navico1::after, .navico2::after
+      {
+        content: " \f078";
+        font-family: "FontAwesome";
+        color: #d9d9d9;
+        z-index: -1;
+      }
+
+    .navico1 select, .navico2 select
+      {
+        background: transparent;
+      }
+
+    .navico1::after
+      {
+        position: relative;
+        right: 35px;
+      }
+
+    .navico2::after
+      {
+        position: relative;
+        left: 5px;
+      }
+
+    /* End Modification */
+
+    #origin, #destination
+      {
+        width: 280px;
+        padding: 10px;
+        text-align: left;
+        font-size: 20px;
+        border: 1.5px solid #d9d9d9;
+        border-radius: 5px;
+        font-family: 'Cabin';
+      }
+
+    #destination[disabled]
+      {
+        border: 1.5px solid #FFD700;
+      }
+
+    select:required:invalid 
+      {
+        color: gray;
+      }
+
+    option[value=""][disabled] 
+      {
+        display: none;
+      }
+
+    option
+      {
+        color: gray;
+      }
+
+    /* Date Picker */
+
+      .form-date
+        {
+          position: relative;
+          top: 18px;
+        }
+
+        #form-date-pic
+          {
+            padding: 9px 10px;
+            width: 210px;
+            border-radius: 5px;
+            border: 1.5px solid #d9d9d9;            
+            font-size: 20px;
+            font-family: 'Cabin';
+          }
+
+    /* Passenger */
+
+      .form-pas
+        {
+          position: relative;
+          top: 20px;
+          left: 50px;
+        }
+
+      #pax
+        {
+          position: relative;
+          left: 15px;
+          border: none;
+          width: 50px;
+          font-size: 20px;
+        }
+
+    /* Submit */
+
+      .search-btn
+        {
+          position: relative;
+          top: 20px;
+          left: 106px;
+        }
+
+      #search-book
+        {
+          border: none;
+          border-radius: 5px;
+          padding: 8px 35px;
+          font-size: 20px;
+          font-family: 'Cabin';
+          background-color: #000080;
+          color: white;
+          cursor: pointer;
+        }
+
+      #search-book:hover
+        {
+          background-color: #FFD700;
+          color: #000080;
+        }
+
+  /* Reminders */
+
+    .remind
+      {
+        position: relative;
+        top: 20px;
+        line-height: 20px;
+      }
+
+  /* Footer */

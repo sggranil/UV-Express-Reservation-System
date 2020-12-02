@@ -1,0 +1,9 @@
+Official HEX Codes
+
+Primary:
+1. #0c2275
+2. #fdc60a
+
+Secondary
+1. #ffffff
+2. #000000

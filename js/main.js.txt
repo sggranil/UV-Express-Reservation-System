@@ -1,0 +1,31 @@
+function pickOr() {
+  var x = document.getElementById("origin").value;
+  var y = document.getElementById("destination");
+
+  if (x == 'Olongapo')
+  {
+    y.disabled = false;
+  	y.getElementsByTagName("OPTION")[1].style.display = "none";
+  	y.getElementsByTagName("OPTION")[2].style.display = "block";
+  	y.getElementsByTagName("OPTION")[3].style.display = "block";
+  } else if (x == 'Sta. Cruz') {
+    y.disabled = false;
+  	y.getElementsByTagName("OPTION")[1].style.display = "block";
+  	y.getElementsByTagName("OPTION")[2].style.display = "none";
+  	y.getElementsByTagName("OPTION")[3].style.display = "none";
+  }
+}
+
+function pickDes() {
+  var x = document.getElementById("origin");
+  var y = document.getElementById("destination").value;
+
+  if (y == 'Iba' || 'Sta. Cruz')
+  {
+    x.getElementsByTagName("OPTION")[1].style.display = "block";
+    x.getElementsByTagName("OPTION")[2].style.display = "none";
+  } else if (y == 'Olongapo') {
+    x.getElementsByTagName("OPTION")[1].style.display = "none";
+    x.getElementsByTagName("OPTION")[2].style.display = "none";
+  }
+}
